@@ -130,12 +130,37 @@ class _Screen4State extends State<Screen4> {
             SizedBox(
               height: 48,
             ),
-            Text(
-              "Or Sign up with",
-              style: TextStyle(
-                  color: Color(0xff555252),
-                  fontSize: 16,
-                  fontWeight: FontWeight.w500),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16),
+              child: Row(
+                children: [
+                  Expanded(child: Container(
+                    height: 3,
+                    decoration: BoxDecoration(
+                      gradient: LinearGradient(colors:[Color(0xffc4c4c4).withOpacity(0.5), Color(0xfff89aee)],
+                      begin: Alignment.centerLeft,
+                      end: Alignment.centerRight),
+                    ),
+                  )),
+                  SizedBox(width: 16,),
+                  Text(
+                    "Or Sign up with",
+                    style: TextStyle(
+                        color: Color(0xff555252),
+                        fontSize: 16,
+                        fontWeight: FontWeight.w500),
+                  ),
+                  SizedBox(width: 16,),
+                  Expanded(child: Container(
+                    height: 3,
+                    decoration: BoxDecoration(
+                      gradient: LinearGradient(colors:[Color(0xfff89aee),Color(0xffc4c4c4).withOpacity(.5), ],
+                          begin: Alignment.centerLeft,
+                          end: Alignment.centerRight),
+                    ),
+                  )),
+                ],
+              ),
             ),
             SizedBox(
               height: 48,
