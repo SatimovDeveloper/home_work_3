@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:home_work_3/screen_4.dart';
 import 'package:home_work_3/screen_5.dart';
+import 'package:home_work_3/screen_7.dart';
 import 'package:home_work_3/screen_8.dart';
 
 void main(){
@@ -21,7 +22,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Screen8(),
+      home: Screen7(),
     );
   }
 }
